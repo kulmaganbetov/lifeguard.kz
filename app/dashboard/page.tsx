@@ -128,7 +128,7 @@ export default function DashboardPage() {
           label="Барлық есептеулер"
           value={data.totalCalculations}
           icon={<BarChart3 className="h-5 w-5" />}
-          tint="emerald"
+          tint="blue"
           trend={data.weekTrend}
         />
         <KpiCard
@@ -143,7 +143,7 @@ export default function DashboardPage() {
           value={data.avgAnnualPremium}
           suffix=" ₸"
           icon={<Wallet className="h-5 w-5" />}
-          tint="sky"
+          tint="cyan"
         />
         <KpiCard
           label="Бүгінгі есептеулер"
@@ -160,7 +160,7 @@ export default function DashboardPage() {
               <h3 className="text-base font-semibold text-slate-900">Күндік көлем</h3>
               <p className="text-xs text-slate-500">Соңғы 30 күн</p>
             </div>
-            <div className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700">
+            <div className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700">
               <TrendingUp className="h-3 w-3" />
               +{Math.max(0, data.weekTrend)}%
             </div>
@@ -170,8 +170,8 @@ export default function DashboardPage() {
               <AreaChart data={data.dailyData} margin={{ top: 5, right: 5, bottom: 0, left: -10 }}>
                 <defs>
                   <linearGradient id="volArea" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#059669" stopOpacity={0.25} />
-                    <stop offset="100%" stopColor="#059669" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#2563EB" stopOpacity={0.25} />
+                    <stop offset="100%" stopColor="#2563EB" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <XAxis
@@ -197,7 +197,7 @@ export default function DashboardPage() {
                 <Area
                   type="monotone"
                   dataKey="count"
-                  stroke="#059669"
+                  stroke="#2563EB"
                   fill="url(#volArea)"
                   strokeWidth={2}
                 />
@@ -273,7 +273,7 @@ export default function DashboardPage() {
                   }}
                   formatter={(v: number) => `${v.toLocaleString("ru-RU")} ₸`}
                 />
-                <Bar dataKey="avgPremium" fill="#0EA5E9" radius={[8, 8, 0, 0]} />
+                <Bar dataKey="avgPremium" fill="#06B6D4" radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -295,7 +295,7 @@ export default function DashboardPage() {
                   </div>
                   <div className="relative flex-1 h-6 rounded-lg bg-slate-100 overflow-hidden">
                     <div
-                      className="absolute inset-y-0 left-0 rounded-lg bg-gradient-to-r from-emerald-500 to-emerald-400 transition-all"
+                      className="absolute inset-y-0 left-0 rounded-lg bg-gradient-to-r from-blue-500 to-blue-400 transition-all"
                       style={{ width: `${pct}%` }}
                     />
                     <div className="absolute inset-0 flex items-center justify-between px-2 text-[10px] font-mono">
@@ -410,7 +410,7 @@ function SortHeader({
         type="button"
         onClick={() => onSort(k)}
         className={`inline-flex items-center gap-1 transition-colors ${
-          active ? "text-emerald-600" : "hover:text-slate-700"
+          active ? "text-blue-600" : "hover:text-slate-700"
         }`}
       >
         {label}

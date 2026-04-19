@@ -155,7 +155,7 @@ function renderInline(text: string): React.ReactNode {
       parts.push(
         <code
           key={key++}
-          className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.85em] text-emerald-700"
+          className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.85em] text-blue-700"
         >
           {token.slice(1, -1)}
         </code>,
@@ -169,7 +169,7 @@ function renderInline(text: string): React.ReactNode {
             href={mm[2]}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-emerald-600 underline underline-offset-2 hover:text-emerald-700"
+            className="text-blue-600 underline underline-offset-2 hover:text-blue-700"
           >
             {mm[1]}
           </a>,
@@ -209,7 +209,7 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
           return (
             <blockquote
               key={i}
-              className="rounded-r-lg border-l-4 border-emerald-500 bg-emerald-50/50 px-4 py-2 text-slate-600 italic"
+              className="rounded-r-lg border-l-4 border-blue-500 bg-blue-50/50 px-4 py-2 text-slate-600 italic"
             >
               {renderInline(b.text)}
             </blockquote>
@@ -218,7 +218,7 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
           return (
             <pre
               key={i}
-              className="rounded-lg bg-slate-900 p-3 font-mono text-sm text-emerald-400 overflow-x-auto"
+              className="rounded-lg bg-slate-900 p-3 font-mono text-sm text-cyan-300 overflow-x-auto"
             >
               <code>{b.code}</code>
             </pre>

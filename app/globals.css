@@ -58,50 +58,50 @@ h1, h2, h3, h4, h5, h6 {
       0 1px 3px 0 rgb(15 23 42 / 0.03);
   }
   .glass-card-hover {
-    @apply bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-emerald-300 hover:shadow-md transition-all duration-200;
+    @apply bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-blue-300 hover:shadow-md transition-all duration-200;
     box-shadow:
       0 1px 2px 0 rgb(15 23 42 / 0.04),
       0 1px 3px 0 rgb(15 23 42 / 0.03);
   }
   .gradient-text {
-    @apply bg-gradient-to-r from-emerald-600 to-sky-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent;
   }
   .gradient-brand {
-    background: linear-gradient(135deg, #059669 0%, #0ea5e9 100%);
+    background: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
   }
   .gradient-brand-animated {
-    background: linear-gradient(135deg, #059669 0%, #10b981 25%, #06b6d4 50%, #0ea5e9 75%, #059669 100%);
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 25%, #0EA5E9 50%, #06B6D4 75%, #2563EB 100%);
     background-size: 300% 300%;
     animation: gradientShift 8s ease infinite;
   }
   .premium-badge {
     @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium text-white shadow-sm;
-    background: linear-gradient(135deg, #059669 0%, #0ea5e9 100%);
-    box-shadow: 0 4px 14px 0 rgb(5 150 105 / 0.25);
+    background: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
+    box-shadow: 0 4px 14px 0 rgb(37 99 235 / 0.25);
   }
   .input-field {
-    @apply w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all bg-white;
+    @apply w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl px-6 py-3 font-medium transition-all active:scale-95 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100;
+    @apply inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl px-6 py-3 font-medium transition-all active:scale-95 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100;
   }
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 border border-slate-200 hover:border-slate-300 bg-white text-slate-700 rounded-xl px-6 py-3 font-medium transition-all active:scale-95 disabled:opacity-50;
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 text-slate-600 hover:text-emerald-600 rounded-xl px-4 py-2 font-medium transition-colors;
+    @apply inline-flex items-center justify-center gap-2 text-slate-600 hover:text-blue-600 rounded-xl px-4 py-2 font-medium transition-colors;
   }
   .pill-option {
     @apply flex items-center justify-center gap-2 border border-slate-200 bg-white text-slate-600 rounded-xl px-4 py-2.5 text-sm font-medium cursor-pointer transition-all hover:border-slate-300 hover:bg-slate-50;
   }
   .pill-option-active {
-    @apply border-emerald-600 bg-emerald-50 text-emerald-700 shadow-sm;
+    @apply border-blue-600 bg-blue-50 text-blue-700 shadow-sm;
   }
   .nav-link {
-    @apply relative text-slate-600 hover:text-emerald-600 transition-colors text-sm font-medium;
+    @apply relative text-slate-600 hover:text-blue-600 transition-colors text-sm font-medium;
   }
   .nav-link-active {
-    @apply text-emerald-600;
+    @apply text-blue-600;
   }
   .nav-link-active::after {
     content: "";
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 4px;
     height: 4px;
     border-radius: 9999px;
-    background-color: #059669;
+    background-color: #2563EB;
   }
   .section-heading {
     @apply text-3xl md:text-4xl font-bold text-slate-900 font-display;
@@ -125,39 +125,39 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.slider-emerald {
+.slider-blue {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 6px;
-  background: linear-gradient(to right, #059669 var(--val, 0%), #E2E8F0 var(--val, 0%));
+  background: linear-gradient(to right, #2563EB var(--val, 0%), #E2E8F0 var(--val, 0%));
   border-radius: 9999px;
   outline: none;
 }
 
-.slider-emerald::-webkit-slider-thumb {
+.slider-blue::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 20px;
   height: 20px;
   background: #ffffff;
-  border: 3px solid #059669;
+  border: 3px solid #2563EB;
   border-radius: 50%;
   cursor: grab;
-  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.35);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.35);
   transition: transform 0.15s;
 }
 
-.slider-emerald::-webkit-slider-thumb:active {
+.slider-blue::-webkit-slider-thumb:active {
   cursor: grabbing;
   transform: scale(1.1);
 }
 
-.slider-emerald::-moz-range-thumb {
+.slider-blue::-moz-range-thumb {
   width: 20px;
   height: 20px;
   background: #ffffff;
-  border: 3px solid #059669;
+  border: 3px solid #2563EB;
   border-radius: 50%;
   cursor: grab;
 }
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: #10b981;
+  background: #3B82F6;
   border-radius: 50%;
   margin: 0 2px;
   animation: typingBounce 1.2s infinite ease-in-out;
@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 *:focus-visible {
-  outline: 2px solid #059669;
+  outline: 2px solid #2563EB;
   outline-offset: 2px;
   border-radius: 6px;
 }

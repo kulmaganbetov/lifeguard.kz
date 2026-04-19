@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#059669",
+  themeColor: "#2563EB",
   width: "device-width",
   initialScale: 1,
 };
@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             left: "-10%",
             width: "60vw",
             height: "60vw",
-            background: "radial-gradient(circle, #10b981, transparent 60%)",
+            background: "radial-gradient(circle, #2563EB, transparent 60%)",
           }}
         />
         <div
@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             right: "-10%",
             width: "55vw",
             height: "55vw",
-            background: "radial-gradient(circle, #0ea5e9, transparent 60%)",
+            background: "radial-gradient(circle, #06B6D4, transparent 60%)",
           }}
         />
         <SiteHeader />

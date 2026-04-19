@@ -132,7 +132,7 @@ function LoginForm() {
 
         <div className="mt-6 text-center text-xs text-slate-500">
           Аккаунтыңыз жоқ па?{" "}
-          <Link href="/about" className="text-emerald-600 hover:underline">
+          <Link href="/about" className="text-blue-600 hover:underline">
             Жоба туралы
           </Link>
         </div>

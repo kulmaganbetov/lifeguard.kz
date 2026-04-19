@@ -11,12 +11,12 @@ interface KpiCardProps {
   prefix?: string;
   trend?: number;
   icon: ReactNode;
-  tint?: "emerald" | "sky" | "violet" | "amber";
+  tint?: "blue" | "cyan" | "violet" | "amber";
 }
 
 const tints: Record<string, string> = {
-  emerald: "bg-emerald-50 text-emerald-600",
-  sky: "bg-sky-50 text-sky-600",
+  blue: "bg-blue-50 text-blue-600",
+  cyan: "bg-cyan-50 text-cyan-600",
   violet: "bg-violet-50 text-violet-600",
   amber: "bg-amber-50 text-amber-600",
 };
@@ -28,7 +28,7 @@ export default function KpiCard({
   prefix,
   trend,
   icon,
-  tint = "emerald",
+  tint = "blue",
 }: KpiCardProps) {
   const positive = (trend ?? 0) >= 0;
   return (

@@ -23,7 +23,7 @@ const config: Config = {
       },
       boxShadow: {
         soft: "0 1px 2px 0 rgb(15 23 42 / 0.04), 0 1px 3px 0 rgb(15 23 42 / 0.06)",
-        glow: "0 10px 40px -10px rgb(5 150 105 / 0.35)",
+        glow: "0 10px 40px -10px rgb(37 99 235 / 0.35)",
       },
       animation: {
         float: "float 6s ease-in-out infinite",

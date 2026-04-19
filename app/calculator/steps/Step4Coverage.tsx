@@ -45,7 +45,7 @@ export default function Step4Coverage({ form, update }: Props) {
       <div>
         <div className="flex items-center justify-between">
           <div className="text-sm font-medium text-slate-700">Сақтандыру сомасы</div>
-          <div className="font-mono text-lg font-bold text-emerald-600">
+          <div className="font-mono text-lg font-bold text-blue-600">
             {fmt(form.coverageAmount)} ₸
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function Step4Coverage({ form, update }: Props) {
           step={1_000_000}
           value={form.coverageAmount}
           onChange={(e) => update({ coverageAmount: Number(e.target.value) })}
-          className="slider-emerald mt-3"
+          className="slider-blue mt-3"
           style={{ ["--val" as string]: `${coverageProgress}%` }}
           aria-label="Сақтандыру сомасы"
         />
@@ -80,18 +80,18 @@ export default function Step4Coverage({ form, update }: Props) {
                 key={c.key}
                 className={`flex cursor-pointer items-center justify-between rounded-xl border px-4 py-3 transition-all ${
                   active
-                    ? "border-emerald-600 bg-emerald-50"
+                    ? "border-blue-600 bg-blue-50"
                     : "border-slate-200 bg-white hover:bg-slate-50"
                 }`}
               >
                 <div className="flex items-center gap-3">
                   <input
                     type="checkbox"
-                    className="h-4 w-4 accent-emerald-600"
+                    className="h-4 w-4 accent-blue-600"
                     checked={active}
                     onChange={() => toggleCoverage(c.key)}
                   />
-                  <span className={`text-sm ${active ? "text-emerald-700 font-medium" : "text-slate-700"}`}>
+                  <span className={`text-sm ${active ? "text-blue-700 font-medium" : "text-slate-700"}`}>
                     {c.label}
                   </span>
                 </div>

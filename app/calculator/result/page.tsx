@@ -77,7 +77,7 @@ export default function ResultPage() {
   if (!data || !form) {
     return (
       <div className="mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center px-4">
-        <Loader2 className="h-8 w-8 animate-spin text-emerald-600" />
+        <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
         <div className="mt-3 text-sm text-slate-500">Нәтиже жүктелуде...</div>
       </div>
     );
@@ -195,7 +195,7 @@ export default function ResultPage() {
               </div>
               <div className="flex items-baseline gap-1.5">
                 <span className="text-sm text-slate-500">айына</span>
-                <span className="font-mono text-xl font-semibold text-emerald-600">
+                <span className="font-mono text-xl font-semibold text-blue-600">
                   {fmtMoney(data.monthlyPremium)} ₸
                 </span>
               </div>
@@ -359,17 +359,17 @@ export default function ResultPage() {
 
       <div className="mt-6 glass-card p-6 md:p-8">
         <div className="flex items-center gap-2">
-          <Sparkles className="h-5 w-5 text-emerald-600" />
+          <Sparkles className="h-5 w-5 text-blue-600" />
           <h3 className="text-base font-semibold text-slate-900">&ldquo;Не болар еді&rdquo; сценариі</h3>
         </div>
         <p className="mt-1 text-sm text-slate-500">
           Өмір салтыңызды өзгертсеңіз, сыйлықақы қалай өзгереді — тікелей есептеу.
         </p>
         <div className="mt-5 grid gap-5 md:grid-cols-3">
-          <label className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 cursor-pointer hover:border-emerald-300 transition-colors">
+          <label className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 cursor-pointer hover:border-blue-300 transition-colors">
             <input
               type="checkbox"
-              className="h-4 w-4 accent-emerald-600"
+              className="h-4 w-4 accent-blue-600"
               checked={wi.quitSmoking}
               onChange={(e) => setWi((w) => ({ ...w, quitSmoking: e.target.checked }))}
               disabled={!form.smoker}
@@ -393,7 +393,7 @@ export default function ResultPage() {
               max={20}
               value={wi.loseWeightKg}
               onChange={(e) => setWi((w) => ({ ...w, loseWeightKg: Number(e.target.value) }))}
-              className="slider-emerald mt-3"
+              className="slider-blue mt-3"
               style={{ ["--val" as string]: `${(wi.loseWeightKg / 20) * 100}%` }}
             />
             {wi.loseWeightKg > 0 && (
@@ -407,10 +407,10 @@ export default function ResultPage() {
             )}
           </div>
 
-          <label className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 cursor-pointer hover:border-emerald-300 transition-colors">
+          <label className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 cursor-pointer hover:border-blue-300 transition-colors">
             <input
               type="checkbox"
-              className="h-4 w-4 accent-emerald-600"
+              className="h-4 w-4 accent-blue-600"
               checked={wi.changeJob}
               onChange={(e) => setWi((w) => ({ ...w, changeJob: e.target.checked }))}
               disabled={form.jobCategory === "office"}
@@ -495,16 +495,16 @@ export default function ResultPage() {
                 </div>
               </div>
               <p className="mt-3 text-xs text-slate-600 leading-relaxed">
-                <Check className="inline h-3.5 w-3.5 text-emerald-600 mr-1" />
+                <Check className="inline h-3.5 w-3.5 text-blue-600 mr-1" />
                 {r.coverageHighlight}
               </p>
               <p className="mt-1 text-xs text-slate-500">
-                <Check className="inline h-3.5 w-3.5 text-emerald-600 mr-1" />
+                <Check className="inline h-3.5 w-3.5 text-blue-600 mr-1" />
                 Төлем мерзімі: {r.payoutMonths} ай
               </p>
               <button
                 type="button"
-                className="mt-5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-700 hover:border-emerald-600 hover:text-emerald-600 transition-all"
+                className="mt-5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600 transition-all"
               >
                 Өтінім жіберу
                 <ArrowRight className="h-3.5 w-3.5" />
