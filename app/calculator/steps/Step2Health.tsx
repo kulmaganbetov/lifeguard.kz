@@ -57,13 +57,13 @@ export default function Step2Health({ form, update }: Props) {
                 key={d.id}
                 className={`flex cursor-pointer items-center gap-2 rounded-xl border px-3 py-2.5 text-sm transition-all ${
                   active
-                    ? "border-emerald-600 bg-emerald-50 text-emerald-700"
+                    ? "border-blue-600 bg-blue-50 text-blue-700"
                     : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
                 }`}
               >
                 <input
                   type="checkbox"
-                  className="h-4 w-4 accent-emerald-600"
+                  className="h-4 w-4 accent-blue-600"
                   checked={active}
                   onChange={() => toggleDisease(d.id)}
                 />

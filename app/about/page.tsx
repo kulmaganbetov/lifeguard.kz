@@ -81,7 +81,7 @@ export default function AboutPage() {
               мәндер ҚР Бюро нацстатистики деректері мен ДДСҰ өмір сүру
               үстемелерінен алынған.
             </p>
-            <pre className="mt-3 rounded-lg bg-slate-900 p-3 font-mono text-xs text-emerald-400 overflow-x-auto">
+            <pre className="mt-3 rounded-lg bg-slate-900 p-3 font-mono text-xs text-cyan-300 overflow-x-auto">
 {`qx(30, male)   = 0.00241
 qx(30, female) = 0.00089
 qx(50, male)   = 0.01089`}
@@ -96,7 +96,7 @@ qx(50, male)   = 0.01089`}
               ішіндегі кумулятивті тірі қалу ықтималдығын есептеуге мүмкіндік
               береді.
             </p>
-            <pre className="mt-3 rounded-lg bg-slate-900 p-3 font-mono text-xs text-emerald-400 overflow-x-auto">
+            <pre className="mt-3 rounded-lg bg-slate-900 p-3 font-mono text-xs text-cyan-300 overflow-x-auto">
 {`μ(x) = α × e^(β·x)
 
 α = 0.00005
@@ -114,7 +114,7 @@ S(x,t) = exp( -α/β × (e^(β(x+t)) − e^(βx)) )`}
               Аннуитет-due факторы: болашақ төлемдерді ҚР Ұлттық банкінің
               базалық мөлшерлемесімен (i = 8.5%) дисконттайды.
             </p>
-            <pre className="mt-3 rounded-lg bg-slate-900 p-3 font-mono text-xs text-emerald-400 overflow-x-auto">
+            <pre className="mt-3 rounded-lg bg-slate-900 p-3 font-mono text-xs text-cyan-300 overflow-x-auto">
 {`v = 1 / (1 + i)
 ä = Σ_{t=0}^{n-1}  v^t · S(x,t)
 
@@ -287,7 +287,7 @@ function SectionTitle({
 }) {
   return (
     <div className="mb-6">
-      <div className="inline-flex items-center gap-2 text-emerald-600 text-xs font-semibold uppercase tracking-wider">
+      <div className="inline-flex items-center gap-2 text-blue-600 text-xs font-semibold uppercase tracking-wider">
         <Icon className="h-3.5 w-3.5" />
         {badge}
       </div>
@@ -322,11 +322,11 @@ function LegalItem({
 }) {
   return (
     <div className="glass-card p-5 flex items-start gap-4">
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
         {icon}
       </div>
       <div>
-        <div className="text-xs font-mono text-emerald-600">{code}</div>
+        <div className="text-xs font-mono text-blue-600">{code}</div>
         <div className="mt-0.5 text-sm font-semibold text-slate-900">{title}</div>
         <p className="mt-1 text-xs text-slate-600 leading-relaxed">{desc}</p>
       </div>

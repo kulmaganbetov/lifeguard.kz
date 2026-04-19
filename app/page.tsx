@@ -19,14 +19,14 @@ const features = [
     description:
       "Гомперц заңы, ҚР өлім кестесі және GPT-4o mini негізіндегі жасырын тәуекелдерді табатын интеллектуалды модель.",
     icon: Brain,
-    tint: "bg-emerald-50 text-emerald-600",
+    tint: "bg-blue-50 text-blue-600",
   },
   {
     title: "ҚР Заңнамасы",
     description:
       "Сақтандыру қызметі туралы №126-II Заңы, МӘМС нормалары және Салық кодексі 341-бабы толық ескерілген.",
     icon: ScrollText,
-    tint: "bg-sky-50 text-sky-600",
+    tint: "bg-cyan-50 text-cyan-600",
   },
   {
     title: "Жеке ұсыныстар",
@@ -105,30 +105,30 @@ export default function HomePage() {
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link href="/consultant" className="btn-secondary text-base">
-              <Sparkles className="h-4 w-4 text-emerald-600" />
+              <Sparkles className="h-4 w-4 text-blue-600" />
               AI-кеңесші
             </Link>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2 animate-fade-in" style={{ animationDelay: "240ms" }}>
             <span className="chip">
-              <Shield className="h-3.5 w-3.5 text-emerald-600" />
+              <Shield className="h-3.5 w-3.5 text-blue-600" />
               ҚР заңнамасы
             </span>
             <span className="chip">
-              <Sparkles className="h-3.5 w-3.5 text-sky-500" />
+              <Sparkles className="h-3.5 w-3.5 text-cyan-500" />
               AI технологиясы
             </span>
             <span className="chip">
-              <Check className="h-3.5 w-3.5 text-emerald-600" />
+              <Check className="h-3.5 w-3.5 text-blue-600" />
               Тегін
             </span>
           </div>
 
           <div className="relative mt-12 flex items-center justify-center animate-float">
-            <div className="absolute h-56 w-56 rounded-full bg-emerald-400/10 blur-2xl" />
+            <div className="absolute h-56 w-56 rounded-full bg-blue-400/10 blur-2xl" />
             <div className="relative">
-              <div className="absolute inset-0 rounded-full border-2 border-emerald-400/30 animate-pulse-ring" />
+              <div className="absolute inset-0 rounded-full border-2 border-blue-400/30 animate-pulse-ring" />
               <GaugeChart value={42} size={280} label="Демо: Орташа тәуекел" />
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="premium-badge bg-white text-emerald-700" style={{ background: "#D1FAE5", boxShadow: "none" }}>
+          <div className="premium-badge bg-white text-blue-700" style={{ background: "#DBEAFE", boxShadow: "none" }}>
             Негізгі мүмкіндіктер
           </div>
           <h2 className="section-heading mt-4">
@@ -161,7 +161,7 @@ export default function HomePage() {
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">{f.description}</p>
                 <Link
                   href="/about"
-                  className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-emerald-600 hover:text-emerald-700"
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700"
                 >
                   Толығырақ
                   <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -216,7 +216,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="inline-flex items-center gap-1 text-emerald-600 text-sm">
+          <div className="inline-flex items-center gap-1 text-blue-600 text-sm">
             <Users className="h-4 w-4" />
             Клиенттерден пікірлер
           </div>
@@ -262,7 +262,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/calculator"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium text-emerald-700 transition-all hover:bg-emerald-50 active:scale-95 shadow-sm"
+              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium text-blue-700 transition-all hover:bg-blue-50 active:scale-95 shadow-sm"
             >
               Қазір бастау
               <ArrowRight className="h-4 w-4" />

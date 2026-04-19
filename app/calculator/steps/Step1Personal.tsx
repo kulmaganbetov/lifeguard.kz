@@ -15,7 +15,7 @@ export default function Step1Personal({ form, update }: Props) {
       <div>
         <label htmlFor="age" className="flex items-center justify-between text-sm font-medium text-slate-700">
           <span>Жасыңыз</span>
-          <span className="font-mono text-lg font-bold text-emerald-600">{form.age}</span>
+          <span className="font-mono text-lg font-bold text-blue-600">{form.age}</span>
         </label>
         <div className="mt-3 flex items-center gap-4">
           <input
@@ -25,7 +25,7 @@ export default function Step1Personal({ form, update }: Props) {
             max={70}
             value={form.age}
             onChange={(e) => update({ age: Number(e.target.value) })}
-            className="slider-emerald flex-1"
+            className="slider-blue flex-1"
             style={{ ["--val" as string]: `${ageProgress}%` }}
           />
           <input

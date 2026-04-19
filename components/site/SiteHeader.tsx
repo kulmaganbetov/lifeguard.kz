@@ -75,11 +75,11 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-40 backdrop-blur-xl bg-white/80 border-b border-slate-200/70">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" aria-label="LifeGuard KZ басты бет">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white shadow-sm">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white shadow-sm">
             <Shield className="h-5 w-5 fill-white" />
           </div>
           <span className="text-lg font-display font-semibold text-slate-900">
-            LifeGuard <span className="text-emerald-600">KZ</span>
+            LifeGuard <span className="text-blue-600">KZ</span>
           </span>
         </Link>
 
@@ -138,7 +138,7 @@ export default function SiteHeader() {
           ) : (
             <Link
               href="/login"
-              className="hidden md:inline-flex items-center gap-1.5 text-slate-600 hover:text-emerald-600 text-sm font-medium px-3 py-2"
+              className="hidden md:inline-flex items-center gap-1.5 text-slate-600 hover:text-blue-600 text-sm font-medium px-3 py-2"
             >
               <LogIn className="h-4 w-4" />
               Кіру
@@ -146,7 +146,7 @@ export default function SiteHeader() {
           )}
           <Link
             href={user ? "/calculator" : "/login?next=/calculator"}
-            className="hidden md:inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl px-4 py-2 text-sm font-medium transition-all active:scale-95 shadow-sm"
+            className="hidden md:inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl px-4 py-2 text-sm font-medium transition-all active:scale-95 shadow-sm"
           >
             Тегін есептеу
           </Link>
@@ -171,7 +171,7 @@ export default function SiteHeader() {
                 onClick={() => setOpen(false)}
                 className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
                   isActive(item.href)
-                    ? "bg-emerald-50 text-emerald-700"
+                    ? "bg-blue-50 text-blue-700"
                     : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
@@ -181,7 +181,7 @@ export default function SiteHeader() {
             <Link
               href={user ? "/calculator" : "/login?next=/calculator"}
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-xl bg-emerald-600 px-3 py-2.5 text-center text-sm font-medium text-white"
+              className="mt-2 rounded-xl bg-blue-600 px-3 py-2.5 text-center text-sm font-medium text-white"
             >
               Тегін есептеу
             </Link>

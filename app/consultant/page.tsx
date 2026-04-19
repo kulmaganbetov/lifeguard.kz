@@ -39,14 +39,14 @@ const suggestions = [
     icon: Calculator,
     title: "Актуарлық есептеу",
     preview: "Гомперц заңы қалай жұмыс істейді?",
-    tint: "bg-emerald-50 text-emerald-600 border-emerald-100",
+    tint: "bg-blue-50 text-blue-600 border-blue-100",
     prompt: "Гомперц заңы арқылы өлім ықтималдығы қалай есептелетінін нақты мысалмен түсіндіріңіз.",
   },
   {
     icon: Scale,
     title: "ҚР заңнамасы",
     preview: "№126-II Заңы не қамтиды?",
-    tint: "bg-sky-50 text-sky-600 border-sky-100",
+    tint: "bg-cyan-50 text-cyan-600 border-cyan-100",
     prompt: "ҚР Сақтандыру қызметі туралы №126-II Заңы бойынша негізгі тараптардың құқықтары қандай?",
   },
   {
@@ -256,7 +256,7 @@ export default function ConsultantPage() {
                     setInput(t);
                     setSidebarOpen(false);
                   }}
-                  className="block w-full rounded-lg px-3 py-2 text-left text-xs text-slate-600 hover:bg-white hover:text-emerald-600 transition-colors"
+                  className="block w-full rounded-lg px-3 py-2 text-left text-xs text-slate-600 hover:bg-white hover:text-blue-600 transition-colors"
                 >
                   {t}
                 </button>
@@ -364,7 +364,7 @@ export default function ConsultantPage() {
                         <div
                           className={`inline-block text-left rounded-2xl px-4 py-3 ${
                             isUser
-                              ? "bg-emerald-600 text-white rounded-tr-sm"
+                              ? "bg-blue-600 text-white rounded-tr-sm"
                               : "bg-white border border-slate-200 text-slate-900 rounded-tl-sm"
                           }`}
                         >
@@ -387,7 +387,7 @@ export default function ConsultantPage() {
                             <button
                               type="button"
                               onClick={() => copyMessage(m)}
-                              className="inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity text-slate-500 hover:text-emerald-600"
+                              className="inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity text-slate-500 hover:text-blue-600"
                               aria-label="Көшіру"
                             >
                               {copiedId === m.id ? (
@@ -420,7 +420,7 @@ export default function ConsultantPage() {
               }}
               className="mx-auto flex max-w-3xl items-end gap-2"
             >
-              <div className="flex-1 rounded-2xl border border-slate-200 bg-white focus-within:border-emerald-400 focus-within:ring-2 focus-within:ring-emerald-100 transition-all">
+              <div className="flex-1 rounded-2xl border border-slate-200 bg-white focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-100 transition-all">
                 <textarea
                   ref={textareaRef}
                   value={input}
